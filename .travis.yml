@@ -1,0 +1,14 @@
+language: cpp
+
+sudo: false
+
+os:
+  -linux
+
+compiler:
+  -clang
+
+install: true
+
+script: g++ test.cpp
+  
