@@ -10,5 +10,17 @@ compiler:
 
 install: true
 
-script: g++ test.cpp
+add_ons: {
+  apt: {
+    sources: [
+      "ubuntu-toolchain-r-test",
+      "llvm-toolchain-trusty"
+    ],
+    packages: [
+      "clang-5.0",
+    ]
+  }
+}
+
+script: scan-build-5.0 test.cpp
   
