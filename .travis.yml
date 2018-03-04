@@ -17,10 +17,10 @@ add_ons: {
       "llvm-toolchain-trusty"
     ],
     packages: [
-      "clang-5.0",
+      "clang",
     ]
   }
 }
 
-script: scan-build-5.0 g++ test.cpp
+script: scan-build g++ test.cpp
   
