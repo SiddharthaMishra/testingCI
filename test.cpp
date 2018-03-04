@@ -2,7 +2,6 @@
 
 int main()
 {
-  int a = 3;
-  std::cout<<"Hello World!!\n";
-  return 0;
+  int a ;
+  std::cout<<a;
 }
